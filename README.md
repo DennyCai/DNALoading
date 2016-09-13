@@ -5,3 +5,4 @@
 
 ScreenShot
 --
+![](https://github.com/DennyCai/DNALoading/blob/master/screenshots/1471640905.gif)
