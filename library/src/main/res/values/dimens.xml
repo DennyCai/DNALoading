@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dna_loding_view_default_width">150dp</dimen>
+    <dimen name="default_amp">20dp</dimen>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DnaLoadingView">
+        <item name="dna_amp">@dimen/default_amp</item>
+        <item name="dna_phase">1.5</item>
+        <item name="dna_colorPrimary">@color/main_color</item>
+        <item name="dna_colorAccent">@color/sub_color</item>
+        <item name="dna_radius">2dp</item>
+        <item name="dna_desh">2dp</item>
+        <item name="dna_duration">6000</item>
+    </style>
+
+
+</resources>
