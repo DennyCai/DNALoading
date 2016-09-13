@@ -2,7 +2,7 @@
 <resources>
     <declare-styleable name="DnaLoadingView">
         <attr name="dna_radius" format="reference|dimension"/>
-        <attr name="dna_desh" format="reference|dimension"/>
+        <attr name="dna_dashWith" format="reference|dimension"/>
         <attr name="dna_amp" format="reference|dimension"/>
         <attr name="dna_phase" format="reference|float|fraction"/>
         <attr name="dna_colorPrimary" format="reference|color"/>

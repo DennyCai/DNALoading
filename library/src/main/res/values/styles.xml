@@ -6,7 +6,7 @@
         <item name="dna_colorPrimary">@color/main_color</item>
         <item name="dna_colorAccent">@color/sub_color</item>
         <item name="dna_radius">2dp</item>
-        <item name="dna_desh">2dp</item>
+        <item name="dna_dashWith">2dp</item>
         <item name="dna_duration">6000</item>
     </style>
 

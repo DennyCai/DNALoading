@@ -9,6 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
+    android:gravity="center"
     tools:context="com.denny.dnaloading.MainActivity">
 
     <com.denny.dnaloading.widget.DnaLoadingView
@@ -22,7 +23,7 @@
         app:dna_phase="1.0"
         app:dna_duration="2000"
         app:dna_radius="5dp"
-        app:dna_desh="2dp"
+        app:dna_dashWith="2dp"
         app:dna_colorPrimary="#ffee00"
         app:dna_colorAccent="#00ffaa"/>
 

@@ -14,13 +14,11 @@ import android.view.animation.LinearInterpolator;
 
 import com.denny.dnaloading.R;
 
-/**
- * Created by Cai on 2016/9/12.
- */
+
 public class DnaLoadingView extends View {
     private int mWidth, mHeight;
     private int mRadius = 10;
-    private int mDesh = 10;
+    private int mDashWith = 10;
     private Paint mCirclePaint;
     private float mOffset = 0;
     private float mFactor;
@@ -53,7 +51,7 @@ public class DnaLoadingView extends View {
         mPrimaryColor = array.getColor(R.styleable.DnaLoadingView_dna_colorPrimary,Color.GRAY);
         mAccentColor = array.getColor(R.styleable.DnaLoadingView_dna_colorAccent,Color.DKGRAY);
         mRadius = (int) array.getDimension(R.styleable.DnaLoadingView_dna_radius,10);
-        mDesh = (int) array.getDimension(R.styleable.DnaLoadingView_dna_desh,10);
+        mDashWith = (int) array.getDimension(R.styleable.DnaLoadingView_dna_dashWith,10);
         mDuration = array.getInteger(R.styleable.DnaLoadingView_dna_duration,6000);
 
         array.recycle();
@@ -101,7 +99,7 @@ public class DnaLoadingView extends View {
 
     private void calcPoints() {
         int width = mWidth - 2*mRadius;
-        mPointCount = width/(2*mRadius+mDesh);
+        mPointCount = width/(2*mRadius+ mDashWith);
     }
 
     @Override
@@ -109,8 +107,8 @@ public class DnaLoadingView extends View {
         canvas.save();
         canvas.translate(mRadius,mHeight>>1);
         for(int i =0;i<mPointCount;++i) {
-            canvas.drawCircle(getDx(i), getDy(Float.valueOf(i) / mPointCount), mRadius, mCirclePaint);
-            canvas.drawCircle(getDx(i)+2*mRadius,-getDy(Float.valueOf(i)/mPointCount),mRadius,mCirclePaint2);
+            canvas.drawCircle(getDx(i), getDy(i*1.0f / mPointCount), mRadius, mCirclePaint);
+            canvas.drawCircle(getDx(i)+2*mRadius,-getDy(i*1.0f/mPointCount),mRadius,mCirclePaint2);
         }
         canvas.restore();
     }
@@ -150,7 +148,7 @@ public class DnaLoadingView extends View {
     }
 
     private float getDx(int i) {
-        return (2*mRadius+mDesh)*i;
+        return (2*mRadius+ mDashWith)*i;
     }
 
     private float getDy(float offset) {
