@@ -10,6 +10,7 @@ ScreenShot
 
 Download
 --
+#### Gradle
 ```groovy
 compile 'com.denny.dnaloading:library:0.5.0'
 ```
